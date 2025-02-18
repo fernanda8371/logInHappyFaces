@@ -6,7 +6,7 @@ import "../App.css"; // Importa los estilos específicos de la Navbar
 function Navbar() {
   return (
     <nav className="navbar">
-      <img src="/happy_faces_logo.png" alt="Happy Faces Logo" className="logo" width="170" height="55" />
+      <img src="/happy_faces_logo.png" alt="Happy Faces Logo" className="logo" width="168" height="55" />
       <div className="nav-links">
         <Link to="/practice">Practice</Link>
         <Link to="/explore">Explore</Link>
