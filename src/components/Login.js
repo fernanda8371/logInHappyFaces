@@ -48,18 +48,18 @@ function RightSection({ email, setEmail, username, setUsername, password, setPas
     <div className="right-section">
       <div className="login-box">
         <h2 className="company-logo">
-          {/* <span className="tech">Tech</span> <span className="mahindra">Mahindra</span> */}
+      
+         <img src="tech_mahindra.png" alt="Tech Mahindra Logo" className="logo-image" /> 
         </h2>
         <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="Mail Id" value={email} onChange={(e) => setEmail(e.target.value)} className="input-field" required />
           <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} className="input-field" required />
           <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} className="input-field" required />
-          <button type="submit" className="login-btn">Register</button>
+          <button type="submit" className="login-btn">Log In</button>
         </form>
         <p className="account-text">
-          Have an Account? <Link to="/" className="login-link">Log In</Link>
+          Don't have an account? <Link to="/" className="login-link">Sign Up</Link>
         </p>
-        <p className="signup-text">Or you can Signup with</p>
+        <p className="signup-text">Or you can Log In with</p>
         <SocialIcons />
         <p className="privacy-text">
           This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.

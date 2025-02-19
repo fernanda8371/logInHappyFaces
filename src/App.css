@@ -6,6 +6,12 @@ body {
   background-color: #f8f8f8;
 }
 
+html, body {
+  height: 100%;
+  overflow: hidden; /* Evita el scroll */
+}
+
+
 /* Contenedor principal */
 .login-container {
   display: flex;
@@ -21,6 +27,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.logo-image{
+  width: 120px; /* Ancho de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  max-width: 80%; /* Asegura que la imagen no se desborde */
 }
 
 .logo {
@@ -58,16 +70,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .login-box {
   background: white;
   padding: 30px;
   border-radius: 36px;
-  width: 360px;
-  position: absolute;
-  right: 100px; /* Mantiene 100px desde el borde derecho */
-
+  width: 350px;
+  height: 540px;
+  right: 60px; /* Mantiene 100px desde el borde derecho */
+  position: relative; /* Cambia de absolute a relative */
+  right: auto; /* Elimina la posición manual de 100px */
+  top: -50px; /* Ajusta la caja más arriba si es necesario */
   text-align: center;
 }
 
@@ -95,14 +110,14 @@ body {
   background-color: white;
   width: 100%;
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
   border: 1px solid #ccc;
   border-radius: 12px;
   font-size: 16px;
 }
 
 .login-btn {
-  background-color: #b71c1c;
+  background-color: #b80037;
   color: white;
   border: none;
   padding: 15px;
@@ -110,7 +125,7 @@ body {
   cursor: pointer;
   border-radius: 45px;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .input-field:focus {
   border-color: #B80037;
@@ -129,7 +144,7 @@ body {
 }
 
 .login-link {
-  color: #B80037;
+  color: #b80037;
   text-decoration: none;
   font-weight: bold;
 }
@@ -178,7 +193,7 @@ body {
 }
 
 .signup-btn {
-  background: #B80037;
+  background: #b80037;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;

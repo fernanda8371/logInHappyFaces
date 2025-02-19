@@ -10,7 +10,9 @@ function Navbar() {
       <div className="nav-links">
         <Link to="/practice">Practice</Link>
         <Link to="/explore">Explore</Link>
-        <Link to="/login">Log In</Link>
+        <Link to="/contact">Contact</Link>
+
+        {/* <Link to="/login">Log In</Link> */}
         <button className="signup-btn">Sign Up</button>
       </div>
     </nav>
