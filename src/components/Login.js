@@ -36,7 +36,7 @@ function LeftSection() {
     <div className="left-section">
      
       <div className="smiley-face">
-        {/* <img src="/login_face.png" alt="Happy Face" /> */}
+        <img src="/left_side_face.svg" alt="Happy Face" />
       </div>
       {/* <button className="retos-btn">Retos</button> */}
     </div>
