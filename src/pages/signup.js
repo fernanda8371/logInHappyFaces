@@ -1,10 +1,9 @@
-// src/components/Login.js
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import "../App.css";  // Asegura que sea relativa al archivo Login.js
+import "../App.css";
 
-function Login() {
+function SignUp() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -48,18 +47,19 @@ function RightSection({ email, setEmail, username, setUsername, password, setPas
     <div className="right-section">
       <div className="login-box">
         <h2 className="company-logo">
-      
-         <img src="tech_mahindra.png" alt="Tech Mahindra Logo" className="logo-image" /> 
+        <img src="tech_mahindra.png" alt="Tech Mahindra Logo" className="logo-image" /> 
+
         </h2>
         <form onSubmit={handleSubmit}>
+          <input type="email" placeholder="Mail Id" value={email} onChange={(e) => setEmail(e.target.value)} className="input-field" required />
           <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} className="input-field" required />
           <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} className="input-field" required />
-          <button type="submit" className="login-btn">Log In</button>
+          <button type="submit" className="login-btn">Register</button>
         </form>
         <p className="account-text">
-          Don't have an account? <Link to="/" className="login-link">Sign Up</Link>
+          Have an Account? <Link to="/" className="login-link">Log In</Link>
         </p>
-        <p className="signup-text">Or you can Log In with</p>
+        <p className="signup-text">Or you can Signup with</p>
         <SocialIcons />
         <p className="privacy-text">
           This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.
@@ -79,4 +79,4 @@ function SocialIcons() {
   );
 }
 
-export default Login;
+export default SignUp;

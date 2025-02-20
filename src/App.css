@@ -157,6 +157,7 @@ html, body {
 .signup-text {
   margin: 15px 0;
   font-size: 14px;
+  
 }
 
 .social-icons img {
@@ -206,3 +207,17 @@ html, body {
   font-size: 18px;
   color: white;
 } 
+
+.nav-links .signup-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.hello-user {
+  font-size: 30px;
+  justify-self: center;
+  padding: 40px;
+
+}

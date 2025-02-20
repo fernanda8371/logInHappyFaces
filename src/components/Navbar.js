@@ -11,9 +11,11 @@ function Navbar() {
         <Link to="/practice">Practice</Link>
         <Link to="/explore">Explore</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/signup"  className="signup-btn">Sign up
+        </Link>
 
         {/* <Link to="/login">Log In</Link> */}
-        <button className="signup-btn">Sign Up</button>
+   
       </div>
     </nav>
   );
