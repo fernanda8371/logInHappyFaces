@@ -1,6 +1,12 @@
 /* Reset básico */
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400..800&display=swap');
+
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
@@ -220,4 +226,101 @@ html, body {
   justify-self: center;
   padding: 40px;
 
+}
+
+/* Menú lateral */
+.side-menu {
+  width: 250px;
+  background: #F3F3F5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.logo-container h2 {
+  font-size: 24px;
+  color: #b80037;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.menu-item:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.logout {
+  margin-top: auto;
+  color: #b80037;
+  font-weight: bold;
+}
+
+/* Contenido de la página principal */
+.home-container {
+  display: flex;
+  height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.challenge-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status-tag {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.upcoming {
+  background-color: #a0a0ff;
+  color: white;
+}
+
+.expired {
+  background-color: #ff6961;
+  color: white;
+}
+
+.submitted {
+  background-color: #86cb8c;
+  color: white;
+}
+.menu-item i {
+  margin: 15px;
 }
